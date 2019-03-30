@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  geonames_db:
+    container_name: geonames_postgres_db
+    image: postgres:11.2
+    environment:
+      POSTGRES_PASSWORD: my_password
+      POSTGRES_USER: db_user
+      POSTGRES_DB: db_name
+    ports:
+      - 5432:5432
